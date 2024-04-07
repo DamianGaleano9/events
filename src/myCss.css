@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    background-color: rgb(249, 61, 92);
+    height: 1000px;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    text-align: center;
+}
+
+.img {
+    display: flex;
+    justify-items: center;
+    object-fit: cover;
+    background-color: rgb(251, 146, 198);
+    padding: 25px;
+    margin: 20px;
+    width: 800px;
+    height: 800px;
+}
+
+.name {
+    font-size: 4em;
+}
