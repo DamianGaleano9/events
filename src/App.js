@@ -5,32 +5,46 @@ import img2 from './images/capriaty.jpg'
 import img3 from './images/jamie.jpg'
 
 function App() {
+  function incrementar(e) {
+    e.target.innerHTML = Number(e.target.innerHTML) + 1;
+    // e.target.style.backgroundColor= "black "
+  }
+
+
+function convert() {
+
+}
+
   return (
     <>
       <div className='container'>
-        <div className='caja'>1</div>
-          <button>accept</button>
+        <div className='caja' onClick={incrementar}>1</div>
+          <button onClick={convert}>accept</button>
           <div>
             <img src={img0} alt='' />
           </div>
+          <input className='field'/>
 
-          <div className='caja'>1</div >
-            <button>accept</button>
+          <div className='caja' onClick={incrementar}>2</div >
+            <button onClick={convert}>accept</button>
             <img src={img1} alt='' />
 
 
 
-            <div className='caja'>2</div>
-            <button>accept</button>
+            <div className='caja' onClick={incrementar}>3</div>
+            <button onClick={convert}>accept</button>
             <div>
               <img src={img2} alt='' />
             </div>
+            <input className='field'/>
 
-          <div className='caja'>4</div>
-          <button>accept</button>
+          <div className='caja' onClick={incrementar}>4</div>
+          <button onClick={convert}>accept</button>
           <div>
             <img src={img3} alt='' />
           </div>
+          <input className='field'/>
+
     </div>
     </>
 
