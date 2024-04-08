@@ -6,8 +6,9 @@
     justify-content: center;
 }
 
-.box {
+.caja {
     text-align: center;
+    user-select: none;
 }
 
 .img {
