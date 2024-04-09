@@ -12,47 +12,52 @@ function App() {
   const refCaja = useRef();
 
 
-    function incrementar(e) {
+  function incrementar(e) {
     e.target.innerHTML = Number(e.target.innerHTML) + 1;
     // e.target.style.backgroundColor= "black "
   }
 
 
-function convert() {
-  refCaja.current.innerHTML = Number(refCaja.current.innerHTML) * cambio
-}
+  function convert() {
+    refCaja.current.innerHTML = Number(refCaja.current.innerHTML) * cambio
+  }
+
+  function cambiar(j) {
+    j.target.src = img1
+  }
 
   return (
     <>
       <div className='container'>
-        <div ref={refCaja}className='caja' onClick={incrementar}>1</div>
-          <button onClick={convert}>accept</button>
-          <div>
-            <img src={img0} alt='' />
-          </div>
-          <input className='field'/>
+        <div ref={refCaja} className='caja' onClick={incrementar}>1</div>
+        <button onClick={convert}>accept</button>
+        <div><img onClick={cambiar} src={img2} alt=''/></div>
+        <div>
+          <img src={img0} alt='' />
+        </div>
+        <input className='field' />
 
-          <div ref={refCaja}className='caja' onClick={incrementar}>2</div >
-            <button onClick={convert}>accept</button>
-            <img src={img1} alt='' />
+        <div ref={refCaja} className='caja' onClick={incrementar}>2</div >
+        <button onClick={convert}>accept</button>
+        <img src={img1} alt='' />
 
 
 
-            <div ref={refCaja}className='caja' onClick={incrementar}>3</div>
-            <button onClick={convert}>accept</button>
-            <div>
-              <img src={img2} alt='' />
-            </div>
-            <input className='field'/>
+        <div ref={refCaja} className='caja' onClick={incrementar}>3</div>
+        <button onClick={convert}>accept</button>
+        <div>
+          <img src={img2} alt='' />
+        </div>
+        <input className='field' />
 
-          <div ref={refCaja}className='caja' onClick={incrementar}>4</div>
-          <button onClick={convert}>accept</button>
-          <div>
-            <img src={img3} alt='' />
-          </div>
-          <input className='field'/>
+        <div ref={refCaja} className='caja' onClick={incrementar}>4</div>
+        <button onClick={convert}>accept</button>
+        <div>
+          <img src={img3} alt='' />
+        </div>
+        <input className='field' />
 
-    </div>
+      </div>
     </>
 
   );
